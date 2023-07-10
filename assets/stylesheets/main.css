@@ -46,12 +46,85 @@ table {
   border-spacing: 0;
 }
 
-body {
-    font-family: Montserrat;
-    color: #3c3c3c;
+/*
+  ----------------------------------------------------------
+   Grid
+  ----------------------------------------------------------
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header, footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+/*
+  ----------------------------------------------------------
+   Typography
+  ----------------------------------------------------------
+*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: Montserrat;
+  color: #3c3c3c;
+}
+
+h1, h2 {
+    font-weight: bold;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 80px
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.container a {
+  color: #ffffff;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  padding: 22px 80px 22px 80px;
+}
+
+.notice {
+  padding: 22px 11px 22px 11px;
+  background-color: #a01c16;
+  color: #ffffff;
+}
+
+.notice h1 {
+  color: #ffffff;
+}
+
+/*
+  ----------------------------------------------------------
+   Background
+  ----------------------------------------------------------
+*/
+
+header, footer {
+  background-color: #047a79;
 }
