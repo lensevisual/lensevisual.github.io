@@ -61,15 +61,41 @@ table {
 }
 
 header, footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px;
+  background-color: #047a79;
 }
 
-.container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.copy-statement {
+  display: flex;
+  align-items: center;
+}
+
+header small, header a, footer small, footer a {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 0 10px;
+  text-decoration: none;
 }
 
 /*
@@ -78,25 +104,30 @@ header, footer {
   ----------------------------------------------------------
 */
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, small {
   font-family: Montserrat;
   color: #3c3c3c;
+  font-size: 15px
 }
 
 h1, h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 50px;
+  margin: 0px 0px 20px 0px;
 }
 
 h2 {
   font-size: 36px;
+  margin: 20px 0px 20px 0px;
 }
 
-.container a {
-  color: #ffffff;
+a {
+  text-decoration: none;
+  color: #047a79;
+  font-weight: bold;
 }
 
 /*
@@ -106,25 +137,15 @@ h2 {
 */
 
 .hero {
-  padding: 22px 80px 22px 80px;
+  padding: 22px 2% 22px 2%;
 }
 
 .notice {
-  padding: 22px 11px 22px 11px;
+  padding: 22px 2% 22px 2%;
   background-color: #a01c16;
   color: #ffffff;
 }
 
 .notice h1 {
   color: #ffffff;
-}
-
-/*
-  ----------------------------------------------------------
-   Background
-  ----------------------------------------------------------
-*/
-
-header, footer {
-  background-color: #047a79;
 }
