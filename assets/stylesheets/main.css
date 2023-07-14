@@ -60,44 +60,6 @@ table {
           box-sizing: border-box;
 }
 
-header, footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 90px;
-  padding: 25px;
-  background-color: #047a79;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.copy-statement {
-  display: flex;
-  align-items: center;
-}
-
-header small, header a, footer small, footer a {
-  color: #ffffff;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav a {
-  color: #ffffff;
-  padding: 0 10px;
-  text-decoration: none;
-}
-
 /*
   ----------------------------------------------------------
    Typography
@@ -116,7 +78,7 @@ h1, h2 {
 
 h1 {
   font-size: 50px;
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 h2 {
@@ -148,4 +110,53 @@ a {
 
 .notice h1 {
   color: #ffffff;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 25px;
+  background-color: #047a79;
+}
+
+section {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.copy-statement {
+  display: flex;
+  align-items: center;
+}
+
+header small, header a, footer small, footer a {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 0 10px;
+  text-decoration: none;
 }
