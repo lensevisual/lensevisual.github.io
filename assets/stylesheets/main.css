@@ -71,21 +71,17 @@ h1, h2, h3, h4, h5, h6, p, a, small {
   color: #3c3c3c;
   font-size: 15px;
 }
-
 h1, h2 {
   font-weight: bold;
 }
-
 h1 {
   font-size: 50px;
   margin: 20px 0px 20px 0px;
 }
-
 h2 {
   font-size: 36px;
   margin: 20px 0px 20px 0px;
 }
-
 a {
   text-decoration: none;
   color: #047a79;
@@ -94,27 +90,7 @@ a {
 
 /*
   ========================================
-  Home
-  ========================================
-*/
-
-.hero {
-  padding: 22px 2% 22px 2%;
-}
-
-.notice {
-  padding: 22px 2% 22px 2%;
-  background-color: #a01c16;
-  color: #ffffff;
-}
-
-.notice h1 {
-  color: #ffffff;
-}
-
-/*
-  ========================================
-  Home
+  Header and footer
   ========================================
 */
 
@@ -126,56 +102,75 @@ header, footer {
   padding: 25px;
   background-color: #047a79;
 }
-
-section {
-  width: 100%;
+header {
+  box-shadow: 0px 5px 5px #aaaaaa;
 }
-
+footer {
+  box-shadow: 0px -5px 5px #64110d;
+}
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
   height: 50px;
 }
-
 .logo img:hover {
   height: 60px;
 }
-
 .copy-statement {
   display: flex;
   align-items: center;
 }
-
-.hero p,
-.hero a {
-  font-size: 20px;
-}
-
-.hero p {
-  line-height: 150%;
-  margin-bottom: 20px;
-}
-
-header small, header a, footer small, footer a {
-  color: #ffffff;
-}
-
 nav {
   display: flex;
   align-items: center;
   width: 75%;
 }
-
 nav a {
   color: #ffffff;
   padding: 0 10px;
   text-align: center;
   text-decoration: none;
 }
-
 nav a:hover {
   font-size: 20px;
+}
+
+/*
+  ========================================
+  Body
+  ========================================
+*/
+body {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+.hero {
+  padding: 22px 2% 22px 2%;
+  box-shadow: 0px 5px 5px #aaaaaa;
+  text-align: center;
+}
+.hero p,
+.hero a {
+  font-size: 20px;
+}
+.hero p {
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.notice {
+  padding: 22px 2% 22px 2%;
+  background-color: #a01c16;
+  color: #ffffff;
+  box-shadow: 0px -5px 5px #aaaaaa;
+  text-align: center;
+}
+.notice h1 {
+  color: #ffffff;
+}
+header small, header a, footer small, footer a {
+  color: #ffffff;
 }
