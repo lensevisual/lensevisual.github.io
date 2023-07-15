@@ -92,12 +92,6 @@ a {
   font-weight: bold;
 }
 
-p {
-  font-size: 20px;
-  line-height: 150%;
-  margin-bottom: 20px;
-}
-
 /*
   ========================================
   Home
@@ -151,6 +145,16 @@ section {
   align-items: center;
 }
 
+.hero p,
+.hero a {
+  font-size: 20px;
+}
+
+.hero p {
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
 header small, header a, footer small, footer a {
   color: #ffffff;
 }
@@ -164,5 +168,6 @@ nav {
 nav a {
   color: #ffffff;
   padding: 0 10px;
+  text-align: center;
   text-decoration: none;
 }
