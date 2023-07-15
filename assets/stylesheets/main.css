@@ -140,6 +140,10 @@ section {
   height: 50px;
 }
 
+.logo img:hover {
+  height: 60px;
+}
+
 .copy-statement {
   display: flex;
   align-items: center;
@@ -170,4 +174,8 @@ nav a {
   padding: 0 10px;
   text-align: center;
   text-decoration: none;
+}
+
+nav a:hover {
+  font-size: 20px;
 }
