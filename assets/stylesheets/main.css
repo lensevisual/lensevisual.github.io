@@ -101,12 +101,14 @@ header, footer {
   height: 90px;
   padding: 25px;
   background-color: #047a79;
+  z-index: 2;
+  position: sticky;
 }
 header {
-  box-shadow: 0px 5px 5px #aaaaaa;
+  box-shadow: 0px 5px 5px #034644;
 }
 footer {
-  box-shadow: 0px -5px 5px #aaaaaa;
+  box-shadow: 0px -5px 5px #034644;
 }
 #notice-footer {
   box-shadow: 0px -5px 5px #64110d;
@@ -152,24 +154,59 @@ section {
   width: 100%;
 }
 .hero {
+  position:relative;
+  height: 500px;
+  text-align: center;
+  background-image: url("../photos/FIMR0004.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+.regular {
   padding: 22px 2% 22px 2%;
-  box-shadow: 0px 5px 5px #aaaaaa;
   text-align: center;
 }
 .hero p,
-.hero a {
+.hero a  {
+  font-size: 25px;
+}
+.regular p,
+.regular a {
   font-size: 20px;
 }
-.hero p {
+.hero p,
+.regular p {
   line-height: 150%;
   margin-bottom: 20px;
+}
+.hero a:hover {
+  font-size: 28px;
+}
+.hero-overlay {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 122, 121, 0.5);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+  color: #ffffff;
 }
 .notice {
   padding: 22px 2% 22px 2%;
   background-color: #a01c16;
   color: #ffffff;
-  box-shadow: 0px -5px 5px #aaaaaa;
+  box-shadow: 0px -5px 5px #034644;
   text-align: center;
+  z-index: 1;
+  position: sticky;
 }
 .notice h1 {
   color: #ffffff;
