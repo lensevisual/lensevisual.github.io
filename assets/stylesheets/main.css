@@ -67,7 +67,7 @@ table {
 */
 
 h1, h2, h3, h4, h5, h6, p, a, small {
-  font-family: Montserrat, Helvetica, Sans-Serif;
+  font-family: "Montserrat", Helvetica, Sans-Serif;
   color: #3c3c3c;
   font-size: 15px;
 }
@@ -106,6 +106,9 @@ header {
   box-shadow: 0px 5px 5px #aaaaaa;
 }
 footer {
+  box-shadow: 0px -5px 5px #aaaaaa;
+}
+#notice-footer {
   box-shadow: 0px -5px 5px #64110d;
 }
 .logo {
