@@ -169,7 +169,7 @@ section {
 }
 .hero p,
 .hero a  {
-  font-size: 25px;
+  font-size: 28px;
 }
 .regular p,
 .regular a {
@@ -181,7 +181,7 @@ section {
   margin-bottom: 20px;
 }
 .hero a:hover {
-  font-size: 28px;
+  font-size: 32px;
 }
 .hero-overlay {
   position: absolute;
@@ -194,10 +194,16 @@ section {
   justify-content: center;
   align-items: center;
 }
+.hero-content {
+  padding: 22px 2% 22px 2%;
+}
 .hero-content h1,
 .hero-content p,
 .hero-content a {
   color: #ffffff;
+}
+.hero-content h1 {
+  font-size: 60px;
 }
 .notice {
   padding: 22px 2% 22px 2%;
