@@ -99,7 +99,7 @@ header, footer {
   align-items: center;
   justify-content: space-between;
   height: 90px;
-  padding: 25px;
+  /* padding: 25px; */
   background-color: #047a79;
   z-index: 2;
   position: sticky;
@@ -116,6 +116,7 @@ footer {
 .logo {
   display: flex;
   align-items: center;
+  padding: 25px;
 }
 .logo img {
   height: 50px;
@@ -126,10 +127,12 @@ footer {
 .copy-statement {
   display: flex;
   align-items: center;
+  padding: 25px;
 }
 nav {
   display: flex;
   align-items: center;
+  padding-right: 25px;
 }
 nav a {
   color: #ffffff;
@@ -150,6 +153,7 @@ nav a:hover {
 */
 body {
   width: 100%;
+  background-color: #047a79;
 }
 section {
   width: 100%;
@@ -166,6 +170,7 @@ section {
 .regular {
   padding: 22px 2% 22px 2%;
   text-align: center;
+  background-color: #ffffff;
 }
 .hero p,
 .hero a  {
