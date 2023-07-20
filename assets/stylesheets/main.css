@@ -97,9 +97,7 @@ a {
 header, footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 90px;
-  /* padding: 25px; */
+  height: 100px;
   background-color: #047a79;
   z-index: 2;
   position: sticky;
@@ -129,12 +127,26 @@ footer {
   align-items: center;
   padding: 25px;
 }
-nav {
+.navigation-menu {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
   padding-right: 25px;
+  line-height: 110%;
 }
-nav a {
+.navigation-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation-menu li {
+  display: flex;
+  align-items: center;
+}
+.navigation-menu a {
   color: #ffffff;
   font-size: 14px;
   padding: 0 10px;
@@ -142,7 +154,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
-nav a:hover {
+.navigation-menu a:hover {
   font-size: 16px;
 }
 
@@ -162,7 +174,7 @@ section {
   position: relative;
   height: 500px;
   text-align: center;
-  background-image: url("../photos/FIMR0004.jpg");
+  background: url("../photos/FIMR0004.jpg");
   background-size: auto 175%;
   background-repeat: repeat;
   background-position: center;
@@ -221,6 +233,7 @@ section {
 }
 .notice h1 {
   color: #ffffff;
+  line-height: 110%;
 }
 header small, header a, footer small, footer a {
   color: #ffffff;
