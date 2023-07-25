@@ -66,7 +66,7 @@ table {
   ----------------------------------------------------------
 */
 
-h1, h2, h3, h4, h5, h6, p, a, small, li {
+h1, h2, h3, h4, h5, h6, p, a, small, li, dt, dd {
   font-family: "Montserrat", Helvetica, Sans-Serif;
   color: #2d3a3a;
   font-size: 15px;
@@ -184,7 +184,7 @@ section {
 
 .hero {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -251,6 +251,8 @@ section {
   height: 100%;
 }
 video#home-background-clip {
+  background: rgb(4,122,121);
+  background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
   background: url("../media/photos/background/pan-san-pedro.jpg");
   background-size: cover;
   background-repeat: repeat;
@@ -268,6 +270,8 @@ video#home-background-clip {
 
 .main-internal-page {
   display: flex;
+  background: rgb(4,122,121);
+  background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
   background: url("../media/photos/background/pan-santa-rosa.jpg");
   background-size: cover;
   background-repeat: repeat;
@@ -307,10 +311,34 @@ video#home-background-clip {
   background-color: rgb(255, 255, 255, 0.8);
 }
 .regular p,
+.regular li,
+.regular dt,
+.regular dd,
 .regular a {
   font-size: 20px;
+  line-height: 150%;
+}
+.regular dt {
+  margin-bottom: 0px
 }
 .regular p {
-  line-height: 150%;
   margin-bottom: 20px;
+}
+.regular dd {
+  margin-bottom: 30px;
+}
+.regular dt {
+  font-size: 30px;
+  font-weight: bold;
+}
+.regular-button {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: #047a79;
+  border-radius: 25px;
+}
+.regular-button:hover {
+  font-size: 22px;
+  background: #058d8b;
 }
