@@ -76,11 +76,11 @@ h1, h2 {
 }
 h1 {
   font-size: 50px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0 20px 0;
 }
 h2 {
   font-size: 36px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0 20px 0;
 }
 a {
   text-decoration: none;
@@ -104,13 +104,13 @@ header, footer {
   position: sticky;
 }
 header {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 footer {
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.3);
 }
 #notice-footer {
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.7);
 }
 .logo {
   display: flex;
@@ -148,7 +148,7 @@ footer {
   align-items: center;
 }
 .navigation-menu a {
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   padding: 0 10px;
   text-align: center;
@@ -159,7 +159,7 @@ footer {
   font-size: 16px;
 }
 header small, header a, footer small, footer a {
-  color: #ffffff;
+  color: #fff;
 }
 
 /*
@@ -218,7 +218,7 @@ section {
 .hero-content h1,
 .hero-content p,
 .hero-content a {
-  color: #ffffff;
+  color: #fff;
 }
 .hero-content h1 {
   font-size: 60px;
@@ -231,7 +231,7 @@ section {
   width: 100%;
   padding: 22px 2% 22px 2%;
   background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   z-index: 1;
   display: flex;
@@ -240,7 +240,7 @@ section {
   flex-grow: 1;
 }
 .notice h1 {
-  color: #ffffff;
+  color: #fff;
   line-height: 110%;
 }
 .video-container {
@@ -295,13 +295,13 @@ video#home-background-clip {
   flex: 1;
   padding: 0 2% 0 0;
   margin: 0;
-  color:#ffffff;
+  color:#fff;
   text-align: center;
   align-items: center;
   height: 100%;
 }
 .lead h1 {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 .regular {
@@ -319,7 +319,7 @@ video#home-background-clip {
   line-height: 150%;
 }
 .regular dt {
-  margin-bottom: 0px
+  margin-bottom: 0
 }
 .regular p {
   margin-bottom: 20px;
@@ -332,7 +332,7 @@ video#home-background-clip {
   font-weight: bold;
 }
 .regular-button {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   padding: 10px 20px;
   background: #047a79;
