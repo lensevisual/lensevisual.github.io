@@ -31,22 +31,9 @@
         </header>
         <section class="hero">
             <div class="video-container">
-                <video muted loop playsinline id="home-background-clip">
+                <video autoplay muted loop playsinline preload="auto" controls id="home-background-clip" poster="assets/media/photos/background/home-background-poster.png">
                     <source src="assets/media/videos/background/home-background-clip.mp4" type="video/mp4">
                 </video>
-                <!-- Provisional script for ensuring video playing in the background -->
-                <script>
-                    // Wait for the page to fully load
-                    document.addEventListener('DOMContentLoaded', function() {
-                        // Get the video element
-                        const video = document.getElementById('home-background-clip');
-                        // Play the video
-                        video.play().catch(function(error) {
-                            // If autoplay is not allowed, or there's any other error, handle it gracefully
-                            console.error('Video autoplay failed:', error);
-                        });
-                    });
-                </script>
             </div>
             <div class="hero-overlay">
                 <div class="hero-content">
