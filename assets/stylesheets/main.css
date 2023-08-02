@@ -121,8 +121,13 @@ footer {
 }
 .logo img {
   height: 50px;
+  transition-property: height;
+  transition-duration: 75ms;
+  transition-timing-function: linear;
+  transition-delay: 0.25s;
 }
-.logo img:hover {
+.logo img:hover,
+.logo img:focus {
   height: 60px;
 }
 .copy-statement {
@@ -156,8 +161,13 @@ footer {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition-property: font-size;
+  transition-duration: 75ms;
+  transition-timing-function: linear;
+  transition-delay: 0.25s;
 }
-.navigation-menu a:hover {
+.navigation-menu a:hover,
+.navigation-menu a:focus {
   font-size: 16px;
 }
 header small, header a, footer small, footer a {
@@ -196,11 +206,18 @@ section {
 .hero a  {
   font-size: 28px;
 }
+.hero a {
+  transition-property: font-size;
+  transition-duration: 75ms;
+  transition-timing-function: linear;
+  transition-delay: 0.25s;
+}
 .hero p {
   line-height: 150%;
   margin-bottom: 20px;
 }
-.hero a:hover {
+.hero a:hover,
+.hero a:focus {
   font-size: 32px;
 }
 .hero-overlay {
@@ -339,8 +356,13 @@ section {
   padding: 10px 20px;
   background: #047a79;
   border-radius: 25px;
+  transition-property: font-size;
+  transition-duration: 75ms;
+  transition-timing-function: linear;
+  transition-delay: 0.25s;
 }
-.regular-button:hover {
+.regular-button:hover,
+.regular-button:focus {
   font-size: 22px;
   background: #058d8b;
 }
