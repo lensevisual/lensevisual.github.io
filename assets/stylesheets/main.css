@@ -99,7 +99,7 @@ header,
 footer {
   display: flex;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   background-color: #047a79;
   z-index: 2;
   position: sticky;
@@ -209,8 +209,10 @@ footer a {
 */
 
 body {
-  min-width: 100vw;
   background-color: #047a79;
+}
+main {
+  width: 100%;
 }
 section {
   width: 100%;
@@ -225,6 +227,7 @@ section {
 .hero {
   position: relative;
   min-height: 110vh;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
