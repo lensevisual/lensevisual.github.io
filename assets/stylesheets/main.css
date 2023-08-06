@@ -209,7 +209,7 @@ footer a {
 */
 
 body {
-  width: 100%;
+  min-width: 100vw;
   background-color: #047a79;
 }
 section {
