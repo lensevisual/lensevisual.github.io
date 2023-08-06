@@ -118,7 +118,7 @@ section {
 header,
 footer {
   display: flex;
-  padding: 0 0 0 36px;
+  padding: 0 18px 0 36px;
   align-items: center;
   width: 100%;
   background-color: #047a79;
@@ -196,9 +196,6 @@ footer {
 .navigation-menu a:hover,
 .navigation-menu a:focus {
   transform: scale(1.2);
-}
-.navigation-menu li:last-child > a {
-  padding-right: 18px;
 }
 .nav-active {
   border-bottom: #fff 3px solid;
@@ -399,7 +396,8 @@ footer a {
 .regular li,
 .regular dt,
 .regular dd,
-.regular a {
+.regular a,
+.regular form {
   font-size: 20px;
   line-height: 150%;
 }
@@ -408,8 +406,14 @@ footer a {
 .regular > p,
 .regular > ul,
 .regular > ol,
-.regular > nav {
+.regular > nav,
+.regular > form {
   padding: 20px 25px;
+}
+.regular fieldset {
+  padding: 20px 25px;
+  border: #047a79 2px solid;
+  border-radius: 5px;
 }
 .regular > h1,
 .regular > h2 {
