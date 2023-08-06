@@ -91,6 +91,23 @@ a {
 
 /*
   ========================================
+  Body general
+  ========================================
+*/
+
+body {
+  width: 100%;
+  background-color: #047a79;
+}
+main {
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+
+/*
+  ========================================
   Header and footer
   ========================================
 */
@@ -98,8 +115,9 @@ a {
 header,
 footer {
   display: flex;
+  padding: 0 36px;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
   background-color: #047a79;
   z-index: 2;
   position: sticky;
@@ -115,7 +133,6 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  padding: 25px;
 }
 .logo img {
   height: 50px;
@@ -144,7 +161,6 @@ footer {
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
-  padding-right: 25px;
   line-height: 110%;
 }
 .navigation-menu ul {
@@ -157,8 +173,6 @@ footer {
 .navigation-menu li {
   display: flex;
   align-items: center;
-}
-.navigation-menu a {
   color: #fff;
   font-size: 14px;
   padding: 0 18px;
@@ -170,8 +184,11 @@ footer {
   transition-timing-function: linear;
   transition-delay: 0.2s;
 }
-.navigation-menu a:hover,
-.navigation-menu a:focus {
+.navigation-menu li:last-child {
+  padding-right:0
+}
+.navigation-menu li:hover,
+.navigation-menu li:focus {
   transform: scale(1.2);
 }
 .social-navigation {
@@ -200,22 +217,6 @@ header a,
 footer small,
 footer a {
   color: #fff;
-}
-
-/*
-  ========================================
-  Body general
-  ========================================
-*/
-
-body {
-  background-color: #047a79;
-}
-main {
-  width: 100%;
-}
-section {
-  width: 100%;
 }
 
 /*
@@ -264,7 +265,7 @@ section {
 .hero-content {
   display: flex;
   flex-direction: column;
-  padding: 22px 2% 22px 2%;
+  padding: 22px 36px;
 }
 .hero-content h1,
 .hero-content p,
@@ -338,7 +339,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2%;
+  padding: 22px 36px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .internal-content-wrapper {
