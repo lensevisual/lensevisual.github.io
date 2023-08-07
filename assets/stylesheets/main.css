@@ -1,4 +1,8 @@
-/* CSS Reset */
+/*
+  ----------------------------------------------------------
+   CSS Reset
+  ----------------------------------------------------------
+*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
@@ -334,7 +338,7 @@ footer a {
 
 /*
   ========================================
-  Internal pages
+  General internal pages
   ========================================
 */
 
@@ -373,9 +377,9 @@ footer a {
   align-items: center;
   height: 100%;
   transition-property: transform;
-  transition-duration: 150ms;
+  transition-duration: 300ms;
   transition-timing-function: linear;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .lead:hover,
 .lead:focus {
@@ -410,17 +414,15 @@ footer a {
 .regular > form {
   padding: 20px 25px;
 }
-.regular fieldset {
-  padding: 20px 25px;
-  border: #047a79 2px solid;
-  border-radius: 5px;
-}
 .regular > h1,
 .regular > h2 {
   padding-bottom: 0;
 }
 .regular-button {
+  border: 0;
   color: #fff;
+  cursor: pointer;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
   background: #047a79;
@@ -433,6 +435,28 @@ footer a {
 article {
   margin: 0 auto;
 }
+.regular > p {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+.regular > p:hover,
+.regular > p:focus {
+  background: rgba(4, 122, 121, 0.25);
+}
+.regular > p:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.regular > p:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+/*
+  ========================================
+  Our services
+  ========================================
+*/
+
 .service {
   padding: 10px 25px 30px 25px;
   transition-property: background-color;
@@ -448,6 +472,110 @@ article {
 .service p {
   padding: 0 0 25px 0;
 }
+
+/*
+  ========================================
+  Get a quote with us
+  ========================================
+*/
+
+fieldset {
+  padding: 20px 25px;
+  border: #047a79 2px solid;
+  border-radius: 10px;
+}
+input,
+select,
+textarea {
+  font: 400 16px/22px "Montserrat", Helvetica, Sans-Serif;
+}
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  font: 300 16px/22px "Montserrat", Helvetica, Sans-Serif;
+  color: #2d3a3aa8;
+}
+label {
+  display: inline-block;
+}
+.quotation-group label {
+  color: #047a79;
+  cursor: pointer;
+  font-weight: 600;
+}
+.quotation-group input,
+.quotation-group select,
+.quotation-group textarea {
+  border: 1px solid #047a79;
+  border-radius: 5px;
+  background: #ffffff42;
+  color: #2d3a3a;
+  display: block;
+  margin: 5px 0 10px 0;
+  padding: 5px 8px;
+}
+.quotation-group input:focus,
+.quotation-group select:focus,
+.quotation-group textarea:focus {
+  background: rgba(53, 182, 180, 0.25);
+}
+.input-1-2,
+.input-2-2 {
+  width: 49%;
+  min-width: 275px;
+}
+.input-1-2 {
+  margin-right: 1%;
+}
+.input-1-1 {
+  width: 100%;
+  min-width: 275px;
+}
+.input-1-1 select,
+.input-1-1 textarea {
+  min-width: 275px;
+  width: 100%;
+}
+.input-1-1 textarea {
+  min-width: 275px;
+  resize: vertical;
+  height: 100px;
+}
+.quotation-group input {
+  width: 100%;
+}
+.sublabel,
+.label-marker {
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.sublabel {
+  display: block;
+  font-weight: 300;
+}
+.label-marker {
+  font-weight: 500;
+}
+.embedded-map {
+  height: 250px;
+  width: 100%;
+  border: 1px solid #047a79;
+  border-radius: 5px;
+}
+.send-button {
+  margin-top: 20px;
+}
+label:hover {
+  color: #058d8b;
+}
+
+/*
+  ========================================
+  Contact us
+  ========================================
+*/
+
 .contact-social-navigation {
   display: flex;
   justify-content: left;
@@ -470,18 +598,14 @@ article {
 .contact-social-navigation a {
   font-size: 40px;
 }
-.regular > * {
-  transition-property: background-color;
-  transition-duration: 300ms;
+.side-icon {
+  width: 35px;
+  transition-property: transform;
+  transition-duration: 75ms;
   transition-timing-function: linear;
+  transition-delay: 0.2s;
 }
-.regular > *:hover,
-.regular > *:focus {
-  background: rgba(4, 122, 121, 0.25);
-}
-.regular > *:first-child {
-  border-radius: 10px 10px 0 0;
-}
-.regular > *:last-child {
-  border-radius: 0 0 10px 10px;
+.side-icon:hover,
+.side-icon:focus {
+  transform: scale(1.3);
 }
