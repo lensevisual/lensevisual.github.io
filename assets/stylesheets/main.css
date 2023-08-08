@@ -112,6 +112,27 @@ main {
 section {
   width: 100%;
 }
+.aside-social-navigation {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  text-align: center;
+}
+.aside-social-navigation a {
+  font-size: 40px;
+  color: #fff;
+}
+.aside-social-navigation li {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+.aside-social-navigation li:hover,
+.aside-social-navigation li:focus {
+  transform: scale(1.3);
+}
 
 /*
   ========================================
@@ -280,7 +301,8 @@ footer a {
 .hero-content {
   display: flex;
   flex-direction: column;
-  padding: 22px 36px;
+  margin: auto;
+  padding: 22px 55px;
 }
 .hero-content h1,
 .hero-content p,
@@ -311,29 +333,6 @@ footer a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.hero-social-navigation {
-  display: flex;
-  margin-bottom: 20vh;
-  justify-content: center;
-}
-.hero-social-navigation ul {
-  display: flex;
-  flex-direction: row;
-}
-.hero-social-navigation li {
-  padding: 0 10px;
-  transition-property: transform;
-  transition-duration: 75ms;
-  transition-timing-function: linear;
-  transition-delay: 0.2s;
-}
-.hero-social-navigation li:hover,
-.hero-social-navigation li:focus {
-  transform: scale(1.3);
-}
-.hero-social-navigation a {
-  font-size: 30px;
 }
 
 /*
