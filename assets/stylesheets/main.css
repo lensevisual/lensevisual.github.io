@@ -301,8 +301,7 @@ footer a {
 .hero-content {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: 22px 55px;
+  padding: 25vh 36px;
 }
 .hero-content h1,
 .hero-content p,
