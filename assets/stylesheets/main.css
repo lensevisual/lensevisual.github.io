@@ -234,6 +234,7 @@ footer a {
   line-height: 110%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
 }
 #toggle:checked ~ .navigation-menu ul {
   height: auto;
