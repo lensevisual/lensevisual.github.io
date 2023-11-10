@@ -382,6 +382,8 @@ footer a {
 
 .main-internal-page {
   display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
   background: rgb(4,122,121);
   background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
   background: url("../media/photos/background/pan-santa-rosa.jpg");
@@ -392,7 +394,7 @@ footer a {
 .internal-overlay {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   padding: 22px 36px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -401,18 +403,18 @@ footer a {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  min-height: 0;
   min-width: 400px;
+  justify-content: flex-start;
   text-align: left;
   margin-right: 40px;
 }
 .lead {
-  flex: 1;
   padding: 0;
   margin-bottom: 20px;
   color:#fff;
   text-align: center;
   align-items: center;
-  height: 100%;
   transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: linear;
@@ -427,7 +429,6 @@ footer a {
   text-align: center;
 }
 .regular {
-  flex: 1;
   padding: 0;
   text-align: left;
   background-color: rgb(255, 255, 255, 0.8);
