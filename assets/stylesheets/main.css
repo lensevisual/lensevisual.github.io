@@ -148,12 +148,12 @@ footer {
   align-items: center;
   width: 100%;
   background-color: #047a78;
-  z-index: 2;
   position: sticky;
   overflow: visible;
 }
 header {
   height: 100px;
+  z-index: 4;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   align-items: center;
   justify-content: space-between;
@@ -164,6 +164,7 @@ header {
   text-align: center;
 }
 footer {
+  z-index: 2;
   justify-content: center;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.3);
 }
@@ -232,7 +233,7 @@ footer a {
   width: 100%;
   align-items: center;
   line-height: 110%;
-  z-index: 1;
+  z-index: 3;
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
 }
