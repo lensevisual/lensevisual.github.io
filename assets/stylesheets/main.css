@@ -116,7 +116,7 @@ section {
 }
 .aside-social-navigation {
   position: fixed;
-  bottom: 2rem;
+  bottom: 10rem;
   right: 2vw;
   z-index: 5;
   text-align: center;
@@ -147,7 +147,7 @@ section {
 header,
 footer {
   display: flex;
-  padding: 0 2vw 0 3vw;
+  padding: 0 2rem 0 4rem;
   align-items: center;
   width: 100%;
   background-color: #047a78;
@@ -242,7 +242,6 @@ footer a {
   min-height: 100vh;
   width: 100%;
   align-items: center;
-  line-height: 1rem;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
@@ -263,6 +262,7 @@ footer a {
   padding: 3rem 0;
   align-items: center;
   font-size: calc(16px + 1.2rem);
+  line-height: 1rem;
   line-height: 100%;
   transition: all 75ms linear 0.2s;
 }
@@ -302,7 +302,10 @@ footer a {
   padding: 0 2rem;
 }
 .social-navigation a {
-  font-size: 4rem;
+  font-size: 5rem;
+}
+.social-icon {
+  font-size: 7rem !important;
 }
 
 /*
@@ -406,7 +409,6 @@ footer a {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  padding: 4rem 8rem;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .internal-content-wrapper {
@@ -417,7 +419,7 @@ footer a {
   min-width: 300px;
   justify-content: flex-start;
   text-align: left;
-  margin-right: 3rem;
+  padding: 4rem 11rem 4rem 4rem;
 }
 .lead {
   padding: 0;
@@ -461,7 +463,7 @@ footer a {
 .regular > nav,
 .regular > form,
 .regular > .gallery {
-  padding: 4rem 5rem;
+  padding: 3rem 3rem;
 }
 .regular > h1,
 .regular > h2 {
@@ -748,7 +750,7 @@ label:hover {
     padding: 0 3rem;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 120%;
     transition: all 75ms linear 0.2s;
   }
