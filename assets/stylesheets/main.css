@@ -509,7 +509,7 @@ article {
 */
 
 .service {
-  padding: 2rem 5rem 6rem 5rem;
+  padding: 2rem 3rem 6rem 3rem;
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: linear;
@@ -526,7 +526,7 @@ article {
 
 /*
   ----------------------------------------------------------
-  Portfolio
+  Gallery
   ----------------------------------------------------------
 */
 .gallery {
