@@ -73,7 +73,7 @@ table {
 */
 
 html {
-  font-size: 0.75vh;
+  font-size: 5px;
 }
 body {
   font-family: "Montserrat", Helvetica, Sans-Serif;
@@ -417,7 +417,7 @@ footer a {
   min-width: 300px;
   justify-content: flex-start;
   text-align: left;
-  margin-right: 8rem;
+  margin-right: 3rem;
 }
 .lead {
   padding: 0;
@@ -609,8 +609,8 @@ label {
 .sublabel,
 .label-marker {
   padding: 0 1rem;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 .sublabel {
   display: block;
@@ -680,7 +680,7 @@ label:hover {
 
 @media screen and (min-width: 1080px) {
   html {
-    font-size: 1vh;
+    font-size: 6px;
   }
 }
 
