@@ -20,8 +20,8 @@
                 <img src="assets/media/icons/logo-lense-blanco.png" alt="Logotipo de Lensē">
             </a>
         </div>
-        <label for="toggle" class="toggle">&#9776;</label>
-        <input id="toggle" type="checkbox">
+        <label for="toggle-navigation" class="toggle-navigation">&#9776;</label>
+        <input id="toggle-navigation" type="checkbox">
         <nav class="navigation-menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -64,7 +64,15 @@
                     <div class="regular">
                         <h2>¿Quieres conocer un poco de nuestro trabajo?</h2>
                         <p>¡Echa un vistazo a algunas de nuestras increíbles tomas!</p>
-                        <div class="gallery">
+                        <div class="toggle-gallery">
+                          <div class="gallery-switch">
+                            <input type="radio" name="toggle-gallery" id="toggle-video" checked>
+                            <label for="toggle-video">Videos</label>
+                            <input type="radio" name="toggle-gallery" id="toggle-photo">
+                            <label for="toggle-photo">Fotos</label>
+                          </div>
+                        </div>
+                        <div class="gallery" id="video-gallery">
                           <video class="gallery-video" controls autoplay loop preload="auto" poster="assets/media/photos/gallery/thumbnail-20230715-sanpedro-02.png">
                             <source src="assets/media/videos/gallery/20230715-sanpedro-02.mp4" type="video/mp4">
                           </video>
@@ -77,6 +85,10 @@
                           <video class="gallery-video" controls autoplay loop preload="auto" poster="assets/media/photos/gallery/thumbnail-20230715-santarosa-03.png">
                             <source src="assets/media/videos/gallery/20230715-santarosa-03.mp4" type="video/mp4">
                           </video>
+                        </div>
+                        <div class="gallery" id="photo-gallery">
+                          <img class="gallery-photo" src="assets/media/photos/gallery/pan-caldas.jpg" alt="Panorámica de Caldas (Antioquia)">
+                          <img class="gallery-photo" src="assets/media/photos/gallery/pan-medellin.jpg" alt="Panorámica de Medellín (Antioquia)">
                         </div>
                     </div>
                 </div>

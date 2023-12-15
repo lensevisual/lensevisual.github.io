@@ -211,10 +211,10 @@ footer a {
   ----------------------------------------------------------
 */
 
-#toggle {
+#toggle-navigation {
   display: none;
 }
-.toggle {
+.toggle-navigation {
   padding: 0 2vw;
   font-size: 6rem;
   font-weight: bold;
@@ -223,13 +223,13 @@ footer a {
   justify-content: flex-end;
   z-index: 9;
 }
-.toggle:hover {
+.toggle-navigation:hover {
   color: #9dcccb;
 }
 .navigation-menu {
   display: none;
 }
-#toggle:checked ~ .navigation-menu {
+#toggle-navigation:checked ~ .navigation-menu {
   display: flex;
   position: fixed;
   top: 0;
@@ -242,17 +242,17 @@ footer a {
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
 }
-#toggle:checked ~ .navigation-menu ul {
+#toggle-navigation:checked ~ .navigation-menu ul {
   height: auto;
   width: 100%;
 }
-#toggle:checked ~ .navigation-menu li {
+#toggle-navigation:checked ~ .navigation-menu li {
   display: flex;
   align-items: center;
   height: auto;
   width: 100%;
 }
-#toggle:checked ~ .navigation-menu a {
+#toggle-navigation:checked ~ .navigation-menu a {
   height: 100%;
   width: 100%;
   padding: 3rem 0;
@@ -262,14 +262,14 @@ footer a {
   line-height: 100%;
   transition: all 75ms linear 0.2s;
 }
-#toggle:checked ~ .navigation-menu li:first-of-type {
+#toggle-navigation:checked ~ .navigation-menu li:first-of-type {
   padding-top: 12rem;
 }
-#toggle:checked ~ .navigation-menu li:last-of-type {
+#toggle-navigation:checked ~ .navigation-menu li:last-of-type {
   padding-bottom: 2rem;
 }
-#toggle:checked ~ .navigation-menu li > a:hover,
-#toggle:checked ~ .navigation-menu li > a:focus {
+#toggle-navigation:checked ~ .navigation-menu li > a:hover,
+#toggle-navigation:checked ~ .navigation-menu li > a:focus {
   transform: scale(1.2);
   background-color: rgba(68, 68, 68, 0.9);
 }
@@ -478,6 +478,7 @@ footer a {
 .regular-button:hover,
 .regular-button:focus {
   background: #058d8b;
+  color: #9dcccb;
 }
 article {
   margin: 0 auto;
@@ -526,11 +527,59 @@ article {
   ----------------------------------------------------------
 */
 .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   max-width: 100%;
 }
-.gallery-video {
+.gallery-video,
+.gallery-photo {
+  padding: 1px;
   min-width: 250px;
-  max-width: 100%;
+}
+.toggle-gallery {
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+}
+.gallery-switch {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid #047a79;
+  border-radius: 5rem;
+  z-index:4;
+}
+.toggle-gallery input[type="radio"] {
+  display: none;
+}
+.toggle-gallery label {
+  width: 50%;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  color: #047a79;
+  padding: 2rem 4rem;
+  border-radius: 5rem;
+  margin: 0;
+  transition: all 0.5s ease 2ms;
+  z-index:3;
+}
+.toggle-gallery label:hover {
+  color: #058d8b;
+  background: #9dcccb;
+}
+.toggle-gallery input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: #047a79;
+  transition: all 1s ease 2ms;
+}
+.toggle-gallery input[type="radio"]:checked + label:hover {
+  color: #9dcccb;
+  background-color: #058d8b;
 }
 
 /*
@@ -693,14 +742,14 @@ label:hover {
 */
 
 @media screen and (min-width: 1080px) {
-  .toggle {
+  .toggle-navigation {
     display: none;
   }
-  #toggle:checked ~ .navigation-menu {
+  #toggle-navigation:checked ~ .navigation-menu {
     position: static;
   }
   .navigation-menu,
-  #toggle:checked ~ .navigation-menu {
+  #toggle-navigation:checked ~ .navigation-menu {
     display: flex;
     flex-direction: row;
     min-height: 0;
@@ -713,7 +762,7 @@ label:hover {
     overflow: hidden;
   }
   .navigation-menu ul,
-  #toggle:checked ~ .navigation-menu ul {
+  #toggle-navigation:checked ~ .navigation-menu ul {
     display: flex;
     height: 100%;
     width: auto;
@@ -723,7 +772,7 @@ label:hover {
     margin: 0;
   }
   .navigation-menu li,
-  #toggle:checked ~ .navigation-menu li {
+  #toggle-navigation:checked ~ .navigation-menu li {
     display: flex;
     height: 100%;
     width: auto;
@@ -732,18 +781,18 @@ label:hover {
   }
   .navigation-menu li:hover,
   .navigation-menu li:focus,
-  #toggle:checked ~ .navigation-menu li a:hover,
-  #toggle:checked ~ .navigation-menu li a:focus {
+  #toggle-navigation:checked ~ .navigation-menu li a:hover,
+  #toggle-navigation:checked ~ .navigation-menu li a:focus {
     background-color: transparent;
   }
-  #toggle:checked ~ .navigation-menu li:first-of-type {
+  #toggle-navigation:checked ~ .navigation-menu li:first-of-type {
     padding-top: 0;
   }
-  #toggle:checked ~ .navigation-menu li:last-of-type {
+  #toggle-navigation:checked ~ .navigation-menu li:last-of-type {
     padding-bottom: 0;
   }
   .navigation-menu li a,
-  #toggle:checked ~ .navigation-menu li a {
+  #toggle-navigation:checked ~ .navigation-menu li a {
     display: flex;
     height: 100%;
     width: 100%;
@@ -800,7 +849,8 @@ label:hover {
     width: 60%;
     margin-right: 0;
   }
-  .gallery-video {
-    max-width: 49%;
+  .gallery-video,
+  .gallery-photo {
+    max-width: 50%;
   }
 }
