@@ -162,12 +162,12 @@ footer {
   height: 7rem;
   align-items: center;
   vertical-align: middle;
-  transition: transform 150ms linear 1ms;
+  transition: transform 75ms linear 1ms;
   transform-origin: center left;
 }
 .logo img:hover,
 .logo img:focus {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 .footer-content-wrapper {
   display: flex;
@@ -263,7 +263,7 @@ footer a {
 
 .aside-social-navigation {
   position: fixed;
-  top: 70rem;
+  bottom: 20rem;
   right: 2vw;
   z-index: 5;
   text-align: center;
@@ -354,7 +354,7 @@ footer a {
 .hero-content {
   display: flex;
   flex-direction: column;
-  padding: 25vh 6rem;
+  padding: 25vh 11rem;
 }
 .hero-content h1,
 .hero-content p,
