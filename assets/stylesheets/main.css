@@ -114,29 +114,6 @@ main {
 section {
   width: 100%;
 }
-.aside-social-navigation {
-  position: fixed;
-  bottom: 10rem;
-  right: 2vw;
-  z-index: 5;
-  text-align: center;
-  transition: all 1s ease;
-  transform: translateY(100%);
-}
-.aside-social-navigation.open {
-  transform: translateY(0);
-}
-.aside-social-navigation a {
-  font-size: 6rem;
-  color: #fff;
-}
-.aside-social-navigation li {
-  transition: transform 75ms linear 1ms;
-}
-.aside-social-navigation li:hover,
-.aside-social-navigation li:focus {
-  transform: scale(1.3);
-}
 
 /*
   ----------------------------------------------------------
@@ -284,6 +261,29 @@ footer a {
   ----------------------------------------------------------
 */
 
+.aside-social-navigation {
+  position: fixed;
+  top: 70rem;
+  right: 2vw;
+  z-index: 5;
+  text-align: center;
+  transition: all 1s ease;
+  transform: translateY(100%);
+}
+.aside-social-navigation.open {
+  transform: translateY(0);
+}
+.aside-social-navigation a {
+  font-size: 6rem;
+  color: #fff;
+}
+.aside-social-navigation li {
+  transition: transform 75ms linear 1ms;
+}
+.aside-social-navigation li:hover,
+.aside-social-navigation li:focus {
+  transform: scale(1.3);
+}
 .social-navigation {
   display: flex;
   margin-bottom: 2rem;
