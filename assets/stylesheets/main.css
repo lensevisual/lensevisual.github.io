@@ -523,7 +523,7 @@ article {
   min-width: 250px;
   width: 100%;
   margin: 0;
-  padding: 0 3rem;
+  padding: 0;
 }
 .hide {
   display: none !important; /* Configuración temporal mientras se implementa el backend para soportar el formulario */
