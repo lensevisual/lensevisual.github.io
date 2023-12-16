@@ -107,6 +107,7 @@ a {
 body {
   width: 100%;
   background-color: #047a79;
+  overflow-x: hidden;
 }
 main {
   width: 100%;
@@ -311,7 +312,8 @@ footer a {
 */
 
 .hero {
-  position: relative;
+  display: flex;
+  position: sticky;
   min-height: 100vh;
   width: 100%;
   text-align: center;
@@ -372,15 +374,21 @@ footer a {
   height: 100%;
 }
 .home-background-clip {
+  width: 100%;
+  height: 100%;
   background: rgb(4,122,121);
   background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
-  background: url("../media/photos/background/pan-san-pedro.jpg");
+  background: url("../media/photos/background/home-background-poster-compressed.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: 50% 100%;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  z-index: -1;
 }
 
 /*
@@ -389,16 +397,27 @@ footer a {
   ----------------------------------------------------------
 */
 
-.main-internal-page {
-  display: flex;
-  justify-content: flex-start;
-  min-height: 100vh;
+.internal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgb(4,122,121);
   background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
   background: url("../media/photos/background/pan-caldas-compressed.jpg");
   background-size: cover;
   background-repeat: repeat;
-  background-position: 50% 35%;
+  background-position: 0 0;
+  background-attachment: fixed;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: -1;
+}
+.main-internal-page {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 .internal-overlay {
   box-sizing: border-box;
@@ -415,7 +434,7 @@ footer a {
   min-width: 300px;
   justify-content: flex-start;
   text-align: left;
-  padding: 4rem 11rem 4rem 4rem;
+  padding: 4rem 12rem 4rem 4rem;
 }
 .lead {
   padding: 0;
@@ -848,6 +867,10 @@ label:hover {
   .internal-content-wrapper {
     width: 60%;
     margin-right: 0;
+  }
+  .gallery-content-wrapper {
+    width: 100%;
+    padding-right: 16rem;
   }
   .gallery-video,
   .gallery-photo {
