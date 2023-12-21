@@ -391,7 +391,7 @@ footer a {
   height: 100%;
   background: rgb(96, 96, 96);
   background: linear-gradient(180deg, rgb(96, 96, 96) 0%, rgb(50, 50, 50) 100%);
-  background: url("../media/photos/background/home-background-poster-compressed.jpg");
+  background: url("../media/photos/background/home-background-poster.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: 50% 100%;
