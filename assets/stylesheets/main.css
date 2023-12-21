@@ -72,12 +72,25 @@ table {
   ----------------------------------------------------------
 */
 
+:root {
+  --main-color: #000; /*#047a79;*/
+  --text-color: #000; /*#2d3a3a;*/
+  --secondary-main-color: #6f6f6f; /*#058d8b;*/
+  --secondary-text-color: #adadad; /*#9dcccb;*/
+}
+
+/*
+  ----------------------------------------------------------
+   Typography
+  ----------------------------------------------------------
+*/
+
 html {
   font-size: 5px;
 }
 body {
   font-family: "Montserrat", Helvetica, Sans-Serif;
-  color: #2d3a3a;
+  color: var(--text-color);
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -92,7 +105,7 @@ h2 {
 }
 a,
 em {
-  color: #047a79;
+  color: var(--main-color);
 }
 a {
   text-decoration: none;
@@ -106,7 +119,7 @@ a {
 
 body {
   width: 100%;
-  background-color: #047a79;
+  background-color: var(--main-color);
   overflow-x: hidden;
 }
 main {
@@ -128,7 +141,7 @@ footer {
   padding: 0 2rem 0 4rem;
   align-items: center;
   width: 100%;
-  background-color: #047a78;
+  background-color: var(--main-color);
   position: sticky;
   overflow: visible;
 }
@@ -225,7 +238,7 @@ footer a {
   z-index: 9;
 }
 .toggle-navigation:hover {
-  color: #9dcccb;
+  color: var(--secondary-text-color);
 }
 .navigation-menu {
   display: none;
@@ -376,8 +389,8 @@ footer a {
 .home-background-clip {
   width: 100%;
   height: 100%;
-  background: rgb(4,122,121);
-  background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
+  background: rgb(96, 96, 96);
+  background: linear-gradient(180deg, rgb(96, 96, 96) 0%, rgb(50, 50, 50) 100%);
   background: url("../media/photos/background/home-background-poster-compressed.jpg");
   background-size: cover;
   background-repeat: repeat;
@@ -403,8 +416,8 @@ footer a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgb(4,122,121);
-  background: linear-gradient(180deg, rgba(4,122,121,1) 0%, rgba(2,57,56,1) 100%);
+  background: rgb(96, 96, 96);
+  background: linear-gradient(180deg, rgb(96, 96, 96) 0%, rgb(50, 50, 50) 100%);
   background: url("../media/photos/background/pan-caldas-compressed.jpg");
   background-size: cover;
   background-repeat: repeat;
@@ -459,7 +472,7 @@ footer a {
   padding: 0;
   text-align: left;
   background-color: rgb(255, 255, 255, 0.8);
-  border-radius: 10px;
+  border-radius: 0px; /*10px;*/
 }
 .regular p,
 .regular li,
@@ -492,13 +505,13 @@ footer a {
   text-transform: uppercase;
   text-align: center;
   padding: 2rem 4rem;
-  background: #047a79;
+  background: var(--main-color);
   border-radius: 5rem;
 }
 .regular-button:hover,
 .regular-button:focus {
-  background: #058d8b;
-  color: #9dcccb;
+  background: var(--secondary-main-color);
+  color: var(--secondary-text-color);
 }
 article {
   margin: 0 auto;
@@ -508,16 +521,16 @@ article {
   transition-duration: 300ms;
   transition-timing-function: linear;
 }
-.regular > p:hover,
+/* .regular > p:hover,
 .regular > p:focus {
   background: rgba(4, 122, 121, 0.25);
-}
-.regular > p:first-child {
+} */
+/* .regular > p:first-child {
   border-radius: 2rem 2rem 0 0;
 }
 .regular > p:last-child {
   border-radius: 0 0 2rem 2rem;
-}
+} */
 .regular-video,
 .regular-photo {
   min-width: 250px;
@@ -542,7 +555,7 @@ article {
   transition-timing-function: linear;
 }
 .service:hover {
-  background: rgba(4, 122, 121, 0.25);
+  background: rgba(104, 104, 104, 0.25);
 }
 .service h2 {
   padding: 0;
@@ -576,7 +589,7 @@ article {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border: 2px solid #047a79;
+  border: 2px solid var(--main-color);
   border-radius: 5rem;
   z-index: 3;
 }
@@ -591,7 +604,7 @@ article {
   text-transform: uppercase;
   text-align: center;
   user-select: none;
-  color: #047a79;
+  color: var(--main-color);
   padding: 2rem 4rem;
   border-radius: 5rem;
   margin: 0;
@@ -599,17 +612,17 @@ article {
   z-index: 2;
 }
 .toggle-gallery label:hover {
-  color: #058d8b;
-  background: #9dcccb;
+  color: var(--secondary-main-color);
+  background: var(--secondary-text-color);
 }
 .toggle-gallery input[type="radio"]:checked + label {
   color: #fff;
-  background-color: #047a79;
+  background-color: var(--main-color);
   transition: all 1s ease 2ms;
 }
 .toggle-gallery input[type="radio"]:checked + label:hover {
-  color: #9dcccb;
-  background-color: #058d8b;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-main-color);
 }
 
 /*
@@ -641,7 +654,7 @@ article {
 }
 fieldset {
   padding: 4rem 5rem;
-  border: #047a79 2px solid;
+  border: var(--main-color) 2px solid;
   border-radius: 2rem;
 }
 input,
@@ -659,17 +672,17 @@ label {
   display: inline-block;
 }
 .quotation-group label {
-  color: #047a79;
+  color: var(--main-color);
   cursor: pointer;
   font-weight: 600;
 }
 .quotation-group input,
 .quotation-group select,
 .quotation-group textarea {
-  border: 1px solid #047a79;
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   background: #ffffff42;
-  color: #2d3a3a;
+  color: var(--main-color);
   display: block;
   margin: 1rem 0 2rem 0;
   padding: 1rem 1.6rem;
@@ -720,14 +733,14 @@ label {
 .embedded-map {
   height: 250px;
   width: 100%;
-  border: 1px solid #047a79;
+  border: 1px solid var(--main-color);
   border-radius: 5px;
 }
 .send-button {
   margin-top: 3rem;
 }
 label:hover {
-  color: #058d8b;
+  color: var(--secondary-main-color);
 }
 
 /*
@@ -857,7 +870,7 @@ label:hover {
   .navigation-menu a:hover,
   .navigation-menu a:focus {
     transform: scale(1.2);
-    color: #9dcccb;
+    color: var(--secondary-text-color);
   }
   .nav-active {
     position: relative;
