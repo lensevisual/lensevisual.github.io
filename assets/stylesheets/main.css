@@ -347,7 +347,7 @@ footer a {
 }
 .hero p {
   line-height: 150%;
-  margin-bottom: 4rem;
+  padding: 1rem 0;
 }
 .hero a:hover,
 .hero a:focus {
@@ -366,7 +366,7 @@ footer a {
 .hero-content {
   display: flex;
   flex-direction: column;
-  padding: 25vh 11rem;
+  padding: 24vh 11rem;
 }
 .hero-content h1,
 .hero-content p,
@@ -375,6 +375,8 @@ footer a {
 }
 .hero-content h1 {
   font-size: 8rem;
+  line-height: 150%;
+  padding: 1rem 0;
 }
 .notice h1 {
   color: #fff;
@@ -472,7 +474,7 @@ footer a {
 .regular {
   padding: 0;
   text-align: left;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.6);
   border-radius: 0px; /*10px;*/
 }
 .regular p,
@@ -550,14 +552,14 @@ article {
 */
 
 .service {
-  padding: 2rem 0 6rem 0;
+  padding: 0 0 7rem 0;
   overflow: hidden;
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: linear;
 }
 .service:hover {
-  background: rgba(104, 104, 104, 0.25);
+  background: rgba(255, 255, 255, 0.50);
 }
 .service-title-wrapper {
   position: relative;
@@ -590,7 +592,7 @@ article {
   padding: 0 3rem 0 3rem;
   color: #fff;
   font-weight: 400;
-  font-size: 10rem;
+  font-size: 9rem;
   transition: all 150ms ease-out 1ms;
   transform-origin: top left;
 }
