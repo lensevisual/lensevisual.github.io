@@ -75,8 +75,9 @@ table {
 :root {
   --main-color: #000; /*#047a79;*/
   --text-color: #000; /*#2d3a3a;*/
-  --secondary-main-color: #6f6f6f; /*#058d8b;*/
+  --secondary-main-color: #3c3c3c; /*#058d8b;*/
   --secondary-text-color: #adadad; /*#9dcccb;*/
+  --tertiary-main-color: #5f5f5f;
 }
 
 /*
@@ -581,7 +582,7 @@ footer a {
 .regular-button:hover,
 .regular-button:focus {
   background: var(--secondary-main-color);
-  color: var(--secondary-text-color);
+  color: var(#fff);
 }
 article {
   margin: 0 auto;
@@ -734,8 +735,8 @@ article {
   z-index: 2;
 }
 .toggle-gallery label:hover {
-  color: var(--secondary-main-color);
-  background: var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  background: var(--tertiary-main-color);
 }
 .toggle-gallery input[type="radio"]:checked + label {
   color: #fff;
